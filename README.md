@@ -8,6 +8,21 @@ It renders a squircle with a shader that approximates a signed distance field to
 emulate refraction. With some blur, noise and a bit of glow, it ends up looking
 somewhat like glass.
 
+## Screenshots
+Seasons:
+|![spring](https://raw.githubusercontent.com/OverShifted/LiquidGlass/refs/heads/master/assets/showcase/spring.png)|![summer](https://raw.githubusercontent.com/OverShifted/LiquidGlass/refs/heads/master/assets/showcase/summer.png)|
+|-|-|
+|![autumn](https://raw.githubusercontent.com/OverShifted/LiquidGlass/refs/heads/master/assets/showcase/autumn.png)|![winter](https://raw.githubusercontent.com/OverShifted/LiquidGlass/refs/heads/master/assets/showcase/winter.png)|
+
+Full effect:
+![Full effect](https://raw.githubusercontent.com/OverShifted/LiquidGlass/refs/heads/master/assets/showcase/full.png)
+
+Without blur or noise:
+![Just refraction](https://raw.githubusercontent.com/OverShifted/LiquidGlass/refs/heads/master/assets/showcase/just-refraction.png)
+
+Without blur or noise, but refracted in the reverse direction:
+![Just refraction, but inverted](https://raw.githubusercontent.com/OverShifted/LiquidGlass/refs/heads/master/assets/showcase/just-refraction-inverted.png)
+
 ## Building
 Make sure to recursively initialize submodules. Either clone with:
 ```sh
@@ -24,19 +39,3 @@ Then you just need to build the CMake project by running `./build.sh`, or execut
 cmake -S . -B build -D CMAKE_BUILD_TYPE=Release
 cmake --build build
 ```
-
-## Screenshots
-Seasons:
-![spring](https://raw.githubusercontent.com/OverShifted/LiquidGlass/refs/heads/master/assets/showcase/spring.png)
-![summer](https://raw.githubusercontent.com/OverShifted/LiquidGlass/refs/heads/master/assets/showcase/summer.png)
-![autumn](https://raw.githubusercontent.com/OverShifted/LiquidGlass/refs/heads/master/assets/showcase/autumn.png)
-![winter](https://raw.githubusercontent.com/OverShifted/LiquidGlass/refs/heads/master/assets/showcase/winter.png)
-
-Full effect:
-![Full effect](https://raw.githubusercontent.com/OverShifted/LiquidGlass/refs/heads/master/assets/showcase/full.png)
-
-Without blur or noise:
-![Just refraction](https://raw.githubusercontent.com/OverShifted/LiquidGlass/refs/heads/master/assets/showcase/just-refraction.png)
-
-Without blur or noise, but refracted in the reverse direction:
-![Just refraction, but inverted](https://raw.githubusercontent.com/OverShifted/LiquidGlass/refs/heads/master/assets/showcase/just-refraction-inverted.png)
